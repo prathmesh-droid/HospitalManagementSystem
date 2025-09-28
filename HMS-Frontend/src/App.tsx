@@ -7,9 +7,9 @@ function App() {
     <div className="flex min-h-svh flex-col items-center justify-center">
       {/* <Button>Click me</Button> */}
       <CustomQuickInfoCard
-        title="Total Patients"
-        description="Active registered users"
-        content="12"
+        title="Dr. Shripad Bhat"
+        description="Cardiologist"
+        content="Patients consulting: 12"
         footer="Compared to last month: +10%"
         action="View details"
       />
