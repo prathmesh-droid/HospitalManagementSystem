@@ -6,27 +6,28 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-}
- from "../../ui/card"
+} from "../../ui/card";
+import { CustomAvatar } from "../CustomAvatar/customAvatar";
 
-
-function CustomQuickInfoCard() {
+function CustomQuickInfoCard({ title, description, content, footer, action }: any) {
   return (
     <Card>
-  <CardHeader>
-    <CardTitle>Card Title</CardTitle>
-    <CardDescription>Card Description</CardDescription>
-    <CardAction>Card Action</CardAction>
-  </CardHeader>
-  <CardContent>
-    <p>Card Content</p>
-  </CardContent>
-  <CardFooter>
-    <p>Card Footer</p>
-  </CardFooter>
-</Card>
-  )
-
+      <CustomAvatar></CustomAvatar>
+      <CardHeader>
+        <CardTitle>{title}</CardTitle>
+        {description && <CardDescription>{description}</CardDescription>}
+        {action && <CardAction>{action}</CardAction>}
+      </CardHeader>
+      <CardContent>
+        <p>{content}</p>
+      </CardContent>
+      {footer && (
+        <CardFooter>
+          <p>{footer}</p>
+        </CardFooter>
+      )}
+    </Card>
+  );
 }
 
-export default CustomQuickInfoCard
+export default CustomQuickInfoCard;
