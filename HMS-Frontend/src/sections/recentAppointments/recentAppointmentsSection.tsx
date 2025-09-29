@@ -13,12 +13,43 @@ const appointmentList : Appointment[] = [
         appointmentDate : "2023-09-25T14:30:00Z",
         doctorName : "Dr. Brown",
         status : "Completed"
+    },
+    {
+        patientName : "Jane Smith",
+        appointmentDate : "2023-09-25T14:30:00Z",
+        doctorName : "Dr. Brown",
+        status : "Completed"
+    },{
+        patientName : "Jane Smith",
+        appointmentDate : "2023-09-25T14:30:00Z",
+        doctorName : "Dr. Brown",
+        status : "Completed"
+    },{
+        patientName : "Jane Smith",
+        appointmentDate : "2023-09-25T14:30:00Z",
+        doctorName : "Dr. Brown",
+        status : "Completed"
+    },{
+        patientName : "Jane Smith",
+        appointmentDate : "2023-09-25T14:30:00Z",
+        doctorName : "Dr. Brown",
+        status : "Completed"
+    },{
+        patientName : "Jane Smith",
+        appointmentDate : "2023-09-25T14:30:00Z",
+        doctorName : "Dr. Brown",
+        status : "Completed"
+    },{
+        patientName : "Jane Smith",
+        appointmentDate : "2023-09-25T14:30:00Z",
+        doctorName : "Dr. Brown",
+        status : "Cancelled"
     }
 ]
 
 export default function RecentAppointmentsSection() {
     return (
-        <div className="flex flex-col w-200 gap-4 p-6 border rounded-3xl shadow-md bg-gray-50">
+        <div className="appointMentSection flex flex-col w-auto gap-4 p-6 border rounded-3xl shadow-md bg-gray-50 overflow-y-auto max-h-[500px]">
             <h2 className="text-2xl text-left font-bold mb-4">Recent Appointments</h2>
             {appointmentList.length === 0 ? (
                 <p>No recent appointments available.</p>

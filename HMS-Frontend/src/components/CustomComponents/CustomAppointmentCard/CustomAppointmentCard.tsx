@@ -9,9 +9,11 @@ export default function CustomAppointmentCard({props} : AppointmentCard) {
         <div className="flex items-center justify-between p-4 border rounded-lg shadow-md bg-white">
             <div className="flex flex-col text-left">
                 <h3 className="text-lg font-semibold mb-2">{props.patientName}</h3>
-                <p className="text-sm text-gray-600 mb-1">{props.doctorName}</p>
+                <div>
+                <span className="text-sm text-gray-600 mb-1">{props.doctorName}</span> ·
+                {props.appointmentDate && <span className="text-sm text-gray-600 mb-1"> {new Date(props.appointmentDate).toLocaleTimeString()}</span>}
+                </div>
             </div>
-            {props.appointmentDate && <p className="text-sm text-gray-600 mb-1">{new Date(props.appointmentDate).toLocaleDateString()}</p>}
             <label className={`text-sm font-medium rounded-lg p-1 ${props.status === 'Scheduled' ? 'text-blue-600 bg-blue-50' : props.status === 'Completed' ? 'text-green-600 bg-green-50' : 'text-red-600 bg-red-50'}`}>
                 {props.status}
             </label>
