@@ -18,7 +18,7 @@ const actionList : QuickActionType[] = [
 
 export default function QuickActionSection() {
     return (
-        <div className="flex flex-col gap-4 p-6 border rounded-3xl shadow-md bg-gray-50">
+        <div className="flex flex-col gap-4 p-6 border rounded-3xl shadow-md bg-gray-50 h-fit">
             <h2 className="text-2xl text-left font-bold mb-4">Quick Actions</h2>
             <div>
                 {actionList.map((action, index) => (
