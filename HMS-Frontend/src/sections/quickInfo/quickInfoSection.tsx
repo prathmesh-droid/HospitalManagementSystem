@@ -12,16 +12,33 @@ export function CarouselSpacing() {
   return (
     <Carousel className="w-full">
       <CarouselContent className="-ml-1">
-        {Array.from({ length: 5 }).map((_, index) => (
-          <CarouselItem key={index} className="pl-1 md:basis-1/2 lg:basis-1/4">
-            <div className="p-1">
+        {[
+          {
+            title: "Total Patients",
+            description: "Active registered users",
+            content: "Total Patients consulted: 120",
+          },
+          {
+            title: "Active Patients",
+            description: "Total scheduled appointments",
+            content: "Patients consulting: 12",
+          },
+          {
+            title: "Today's Appointments",
+            description: "Appointments scheduled today",
+            content: "Patients consulting: 6",
+          },
+        ].map((item, index) => (
+          <CarouselItem
+            key={index}
+            className="pl-1 md:basis-1/2 lg:basis-1/4"
+          >
+            <div className="p-1 h-full">
               <CustomQuickInfoCard
-                      title="Dr. Shripad Bhat"
-                      description="Cardiologist"
-                      content="Patients consulting: 12"
-                      footer="Compared to last month: +10%"
-                      action="View details"
-                    />
+                title={item.title}
+                description={item.description}
+                content={item.content}
+              />
             </div>
           </CarouselItem>
         ))}

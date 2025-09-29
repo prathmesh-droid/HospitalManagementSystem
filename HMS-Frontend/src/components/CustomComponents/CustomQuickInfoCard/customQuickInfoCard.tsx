@@ -17,7 +17,7 @@ function CustomQuickInfoCard({
   action,
 }: any) {
   return (
-    <Card>
+    <Card className="h-full flex flex-col">
       <div className="flex items-center gap-3 p-4">
         {/* Apply styles to CustomAvatar */}
         <CustomAvatar className="w-12 h-12 border border-gray-200 shadow-sm" />
