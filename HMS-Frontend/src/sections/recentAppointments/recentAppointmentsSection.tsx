@@ -49,14 +49,14 @@ const appointmentList : Appointment[] = [
 
 export default function RecentAppointmentsSection() {
     return (
-        <div className="appointMentSection flex flex-col w-auto gap-4 p-6 border rounded-3xl shadow-md bg-gray-50 overflow-y-auto max-h-[500px]">
-            <h2 className="text-2xl text-left font-bold mb-4">Recent Appointments</h2>
+        <div className="appointMentSection flex flex-col w-auto gap-4 p-6 border rounded-3xl shadow-md bg-gray-50 max-h-[380px]">
+            <h2 className="text-2xl text-left font-bold mb-2">Recent Appointments</h2>
             {appointmentList.length === 0 ? (
                 <p>No recent appointments available.</p>
             ) : (
-                <div>
+                <div className="overflow-y-auto">
                 {appointmentList.map((appointment, index) => (
-                    <div key={index} className="mb-4">
+                    <div key={index} className="mb-2">
                         <CustomAppointmentCard props={appointment} />
                     </div>
                 ))}

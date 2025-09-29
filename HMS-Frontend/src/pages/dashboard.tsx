@@ -4,8 +4,12 @@ import RecentAppointmentsSection from "../sections/recentAppointments/recentAppo
 export default function Dashboard() {
     return (
         <div className="dashboardPage flex flex-col w-full h-full gap-2">
+            <div className="HeroSection text-left flex flex-col">
+                <h1>Dashboard</h1>
+                <span>Welcome back! Here's what your day looks like.</span>
+            </div>
             <CarouselSpacing/>
-            <div className="grid grid-cols-[3fr_1fr] gap-2">
+            <div className="grid grid-cols-[3fr_2fr] gap-2">
             <RecentAppointmentsSection></RecentAppointmentsSection>
             <QuickActionSection></QuickActionSection>
             </div>

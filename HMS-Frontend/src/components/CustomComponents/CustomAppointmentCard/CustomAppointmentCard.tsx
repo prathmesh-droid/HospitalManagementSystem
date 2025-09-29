@@ -6,9 +6,9 @@ interface AppointmentCard {
 
 export default function CustomAppointmentCard({props} : AppointmentCard) {
     return (
-        <div className="flex items-center justify-between p-4 border rounded-lg shadow-md bg-white">
+        <div className="flex items-center justify-between p-2 border rounded-lg shadow-md bg-white">
             <div className="flex flex-col text-left">
-                <h3 className="text-lg font-semibold mb-2">{props.patientName}</h3>
+                <h3 className="text-lg font-semibold">{props.patientName}</h3>
                 <div>
                 <span className="text-sm text-gray-600 mb-1">{props.doctorName}</span> ·
                 {props.appointmentDate && <span className="text-sm text-gray-600 mb-1"> {new Date(props.appointmentDate).toLocaleTimeString()}</span>}
