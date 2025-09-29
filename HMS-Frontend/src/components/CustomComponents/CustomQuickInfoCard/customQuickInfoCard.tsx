@@ -20,7 +20,7 @@ function CustomQuickInfoCard({
     <Card>
       <div className="flex items-center gap-3 p-4">
         {/* Apply styles to CustomAvatar */}
-        <CustomAvatar className="w-12 h-12 border border-gray-200 shadow-sm flex-1" />
+        <CustomAvatar className="w-12 h-12 border border-gray-200 shadow-sm" />
 
         {/* Apply styles to CardHeader */}
         <CardHeader className="p-0 flex-1">

@@ -1,18 +1,13 @@
-import { Button } from './components/ui/button'
 import './App.css'
 import CustomQuickInfoCard from './components/CustomComponents/CustomQuickInfoCard/customQuickInfoCard'
 import QuickActionSection from './sections/quickActions/quickActionSection'
+import { CarouselSpacing } from './sections/quickInfo/quickInfoSection'
 function App() {
   return (
-    <div className="flex min-h-svh flex-col items-center justify-center">
+    <div className="flex min-h-svh flex-col items-center justify-start">
       {/* <Button>Click me</Button> */}
-      <CustomQuickInfoCard
-        title="Dr. Shripad Bhat"
-        description="Cardiologist"
-        content="Patients consulting: 12"
-        footer="Compared to last month: +10%"
-        action="View details"
-      />
+      <CarouselSpacing></CarouselSpacing>
+      
       <QuickActionSection></QuickActionSection>
     </div>
 
