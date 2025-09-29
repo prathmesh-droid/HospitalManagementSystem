@@ -76,3 +76,75 @@ export const MaleDoctorSVG = (props: React.SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
+
+export const PatientSVG = (props: React.SVGProps<SVGSVGElement>) => (
+  <svg
+    fill="#000000"
+    viewBox="0 0 32 32"
+style={{ fillRule: "evenodd", clipRule: "evenodd", strokeLinejoin: "round", strokeMiterlimit: 2 }}
+    version="1.1"
+    //xml:space="preserve"
+    xmlns="http://www.w3.org/2000/svg"
+    //xmlns:serif="http://www.serif.com/"
+    //xmlns:xlink="http://www.w3.org/1999/xlink"
+  >
+    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+    <g
+      id="SVGRepo_tracerCarrier"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    ></g>
+    <g id="SVGRepo_iconCarrier">
+      <path d="M9.731,14.075c-1.387,0.252 -2.676,0.921 -3.687,1.932c-1.309,1.309 -2.044,3.084 -2.044,4.935l0,4.039c0,1.657 1.343,3 3,3c4.184,-0 13.816,-0 18,-0c1.657,-0 3,-1.343 3,-3l0,-4.039c0,-1.851 -0.735,-3.626 -2.044,-4.935c-1.011,-1.011 -2.3,-1.68 -3.687,-1.932c0.468,-0.939 0.731,-1.997 0.731,-3.117c0,-3.863 -3.137,-7 -7,-7c-3.863,0 -7,3.137 -7,7c0,1.12 0.263,2.178 0.731,3.117Zm11.169,1.88c-1.262,1.239 -2.993,2.003 -4.9,2.003c-1.907,0 -3.638,-0.764 -4.9,-2.003c-0.04,0.005 -0.08,0.007 -0.12,0.007c-1.321,0 -2.588,0.525 -3.521,1.459c-0.934,0.934 -1.459,2.201 -1.459,3.521c0,0 0,4.039 0,4.039c0,0.552 0.448,1 1,1l18,-0c0.552,-0 1,-0.448 1,-1c-0,-0 0,-4.039 0,-4.039c0,-1.32 -0.525,-2.587 -1.459,-3.521c-0.933,-0.934 -2.2,-1.459 -3.521,-1.459c-0.04,0 -0.08,-0.002 -0.12,-0.007Zm-4.9,-9.997c2.76,0 5,2.241 5,5c0,2.76 -2.24,5 -5,5c-2.76,0 -5,-2.24 -5,-5c0,-2.759 2.24,-5 5,-5Z"></path>
+      <path d="M20,20.008l-1,-0c-0.552,-0 -1,0.448 -1,1c-0,0.552 0.448,1 1,1l1,-0l0,1c-0,0.552 0.448,1 1,1c0.552,-0 1,-0.448 1,-1l0,-1l1,-0c0.552,-0 1,-0.448 1,-1c-0,-0.552 -0.448,-1 -1,-1l-1,-0l0,-1c-0,-0.552 -0.448,-1 -1,-1c-0.552,-0 -1,0.448 -1,1l0,1Z"></path>
+    </g>
+  </svg>
+);
+
+
+export const CalendarSVG = (props: React.SVGProps<SVGSVGElement>) => (
+  <svg
+    viewBox="0 0 1024 1024"
+    //class="icon"
+    version="1.1"
+    xmlns="http://www.w3.org/2000/svg"
+    fill="#000000"
+  >
+    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+    <g
+      id="SVGRepo_tracerCarrier"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    ></g>
+    <g id="SVGRepo_iconCarrier">
+      <path
+        d="M716 190.9v-67.8h-44v67.8H352v-67.8h-44v67.8H92v710h840v-710H716z m-580 44h172v69.2h44v-69.2h320v69.2h44v-69.2h172v151.3H136V234.9z m752 622H136V402.2h752v454.7z"
+        fill="#39393A"
+      ></path>
+      <path
+        d="M319 565.7m-33 0a33 33 0 1 0 66 0 33 33 0 1 0-66 0Z"
+        fill="#000000"
+      ></path>
+      <path
+        d="M510 565.7m-33 0a33 33 0 1 0 66 0 33 33 0 1 0-66 0Z"
+        fill="#000000"
+      ></path>
+      <path
+        d="M701.1 565.7m-33 0a33 33 0 1 0 66 0 33 33 0 1 0-66 0Z"
+        fill="#000000"
+      ></path>
+      <path
+        d="M319 693.4m-33 0a33 33 0 1 0 66 0 33 33 0 1 0-66 0Z"
+        fill="#000000"
+      ></path>
+      <path
+        d="M510 693.4m-33 0a33 33 0 1 0 66 0 33 33 0 1 0-66 0Z"
+        fill="#000000"
+      ></path>
+      <path
+        d="M701.1 693.4m-33 0a33 33 0 1 0 66 0 33 33 0 1 0-66 0Z"
+        fill="#000000"
+      ></path>
+    </g>
+  </svg>
+);
