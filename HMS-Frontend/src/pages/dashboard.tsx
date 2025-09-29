@@ -1,13 +1,11 @@
-import CustomQuickInfoCard from "../components/CustomComponents/CustomQuickInfoCard/customQuickInfoCard";
 import QuickActionSection from "../sections/quickActions/quickActionSection";
 import { CarouselSpacing } from "../sections/quickInfo/quickInfoSection";
 import RecentAppointmentsSection from "../sections/recentAppointments/recentAppointmentsSection";
-import { SidebarTrigger } from "../components/ui/sidebar";
 export default function Dashboard() {
     return (
-        <div>
+        <div className="dashboardPage flex flex-col w-full h-full gap-2">
             <CarouselSpacing/>
-            <div className="flex gap-2">
+            <div className="grid grid-cols-[3fr_1fr] gap-2">
             <RecentAppointmentsSection></RecentAppointmentsSection>
             <QuickActionSection></QuickActionSection>
             </div>
