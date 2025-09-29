@@ -4,26 +4,26 @@ import type { QuickActionType } from "../../types/quickActionType";
 const actionList : QuickActionType[] = [
     {
         title : "Add new patient",
-        //description : "Register a new patient in the system",
+        icon : "patient",
         actionLabel : "Add",
+        action : () => {console.log("Add new patient clicked")}
     }, 
     {
         title : "Schedule appointment",
-        //description : "Book a new appointment for a patient",
+        icon : "schedule",
         actionLabel : "Add",
+        action : () => {console.log("Schedule appointment clicked")}
     }
 ]
 
 export default function QuickActionSection() {
     return (
-        <div className="flex flex-col gap-4 p-6 border rounded-lg shadow-md">
+        <div className="flex flex-col gap-4 p-6 border rounded-3xl shadow-md bg-gray-50">
             <h2 className="text-2xl text-left font-bold mb-4">Quick Actions</h2>
-            {/* <CustomQuickActionCard props={}></CustomQuickActionCard> */}
-            {/* <CustomQuickActionCard props={}></CustomQuickActionCard> */}
             <div>
                 {actionList.map((action, index) => (
                     <div key={index} className="mb-4">
-                        <CustomQuickActionCard props={action}></CustomQuickActionCard>
+                        <CustomQuickActionCard props={action} />
                     </div>
                 ))}
             </div>
