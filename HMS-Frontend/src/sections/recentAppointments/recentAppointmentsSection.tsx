@@ -50,7 +50,14 @@ const appointmentList : Appointment[] = [
 export default function RecentAppointmentsSection() {
     return (
         <div className="appointMentSection flex flex-col w-auto gap-4 p-6 border rounded-3xl shadow-md bg-gray-50 max-h-[380px]">
-            <h2 className="text-2xl text-left font-bold mb-2">Recent Appointments</h2>
+            <div className="flex items-center justify-between">
+                <h2 className="text-2xl text-left font-bold mb-2">Recent Appointments</h2>
+                <select className="p-2 border rounded-3xl bg-white">
+                    <option value="today">Today</option>
+                    <option value="week">This Week</option>
+                    <option value="month">This Month</option>
+                </select>
+            </div>
             {appointmentList.length === 0 ? (
                 <p>No recent appointments available.</p>
             ) : (
