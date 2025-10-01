@@ -1,10 +1,10 @@
 import './App.css'
-import QuickActionSection from './sections/quickActions/quickActionSection'
 import { AppSidebar } from './sections/sidebar/sidebar';
 import { SidebarProvider } from './components/ui/sidebar';
 import { SidebarTrigger } from './components/ui/sidebar';
 import { Route,BrowserRouter as Router, Routes } from 'react-router-dom';
 import Dashboard from './pages/dashboard';
+import ScheduleAppointment from './pages/scheduleAppointment';
 function App() {
   return (
     <Router>
@@ -15,7 +15,7 @@ function App() {
          <main className="flex-1 p-4">
           <Routes>
             <Route path="/dashboard" element={<Dashboard />} />
-            <Route path="/inbox" element={<QuickActionSection />} />
+            <Route path="/scheduleAppointment" element={<ScheduleAppointment />} />
           </Routes>
         </main>
       </SidebarProvider>
