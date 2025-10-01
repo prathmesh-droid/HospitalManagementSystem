@@ -1,6 +1,6 @@
-import QuickActionSection from "../sections/quickActions/quickActionSection";
-import { CarouselSpacing } from "../sections/quickInfo/quickInfoSection";
-import RecentAppointmentsSection from "../sections/recentAppointments/recentAppointmentsSection";
+import { Calendar29 } from "../components/CustomComponents/CustomCalendar/customCalendar";
+import AppointmentForm from "../components/CustomComponents/CustomForms/AppointmentForm";
+import AppointmentMatrix from "../sections/timeSlotMatrix/appointmentMatrix";
 export default function ScheduleAppointment() {
     return (
         <div className="dashboardPage flex flex-col w-full h-full gap-2">
@@ -8,10 +8,12 @@ export default function ScheduleAppointment() {
                 <h1>Schedule your appointment</h1>
                 <span>Welcome back! Here's what your day looks like.</span>
             </div>
-            <CarouselSpacing/>
-            <div className="grid grid-cols-[3fr_2fr] gap-2">
-            <RecentAppointmentsSection></RecentAppointmentsSection>
-            <QuickActionSection></QuickActionSection>
+            <div className="flex gap-2">
+                <div className="flex flex-col gap-2 w-1/2">
+                    <Calendar29 />
+                    <AppointmentMatrix/>
+                </div>
+            <AppointmentForm/>
             </div>
         </div>
     )
