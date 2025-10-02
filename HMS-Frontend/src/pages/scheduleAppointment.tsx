@@ -6,7 +6,6 @@ export default function ScheduleAppointment() {
         <div className="dashboardPage flex flex-col w-full h-full gap-2">
             <div className="HeroSection text-left flex flex-col">
                 <h1>Schedule your appointment</h1>
-                <span>Welcome back! Here's what your day looks like.</span>
             </div>
             <div className="flex gap-2">
                 <div className="flex flex-col gap-2 w-1/2">

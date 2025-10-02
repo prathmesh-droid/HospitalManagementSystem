@@ -12,10 +12,8 @@ const hospitalData = [
   },
 ];
 
-// import { useState } from "react";
 import { Card, CardHeader, CardTitle, CardContent } from "../../components/ui/card";
-// import { Button } from "../../ui/button";
-// import { Badge } from "@/components/ui/badge";
+
 import { Button } from "../../components/ui/button";
 import { Badge } from "../../components/ui/badge";
 
@@ -55,7 +53,7 @@ export default function AppointmentMatrix() {
                 return (
                   <Button
                     key={idx}
-                    variant={isSelected ? "default" : "outline"}
+                    variant={isSelected ? "outline" : "outline"}
                     className={`w-full`}
                     onClick={() => setSelectedSlot({ location: hospital.location, slot })}
                   >
@@ -70,7 +68,7 @@ export default function AppointmentMatrix() {
 
       {selectedSlot && (
         <div className="mt-6">
-          <Badge variant="default" className="px-4 py-2 text-lg">
+          <Badge variant="outline" className="px-4 py-2 text-lg">
             ✅ You selected {selectedSlot.slot} at {selectedSlot.location}
           </Badge>
         </div>
