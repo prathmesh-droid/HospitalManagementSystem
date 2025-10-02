@@ -22,7 +22,7 @@ const items = [
   {
     title: "Schedule Appointment",
     url: "/scheduleAppointment", // redirect here
-    icon: Inbox,
+    icon: Calendar,
   },
   {
     title: "Calendar",
